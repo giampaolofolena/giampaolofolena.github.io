@@ -26,6 +26,22 @@ a {
     transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and font size */
 }
 
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+p {
+    font-size: 1.2em;
+    color: #ccc;
+    text-align: justify;
+}
+
 /* Header */
 header {
     text-align: center;
@@ -50,19 +66,19 @@ header p {
     border-bottom: 1px solid #333;
 }
 
+
 #project-description h2 {
-    font-size: 2.5em;
+    font-size: 1.5em;
     margin-bottom: 20px;
     color: #fff;
 }
 
 #project-description h3 {
-    font-size: 2em;
+    font-size: 1.3em;
 }
 
-
 #project-description p {
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #ccc;
     text-align: justify;
 }
@@ -175,14 +191,6 @@ header a:hover {
     }
 
     header p {
-        font-size: 1em;
-    }
-
-    #project-description h2 {
-        font-size: 1.5em;
-    }
-
-    #project-description p {
         font-size: 1em;
     }
 }
