@@ -179,6 +179,10 @@ header a:hover {
         font-size: 2em;
     }
 
+    #project-description h2 {
+        font-size: 1.5em;
+    }
+
     #project-description p {
         font-size: 1em;
     }
