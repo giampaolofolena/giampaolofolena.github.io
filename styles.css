@@ -120,6 +120,21 @@ footer a:hover {
     font-size: 3.1em; /* Slightly larger font on hover */
 }
 
+/* Header Link Styling */
+header a {
+    color: #a7d0ff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 3em; /* Adjust the font size */
+    margin: 0 10px; /* Space between links */
+    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and font size */
+}
+
+header a:hover {
+    color: #76b8e7; /* Hover color change */
+    font-size: 3.1em; /* Increase font size slightly on hover */
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+
 /* For mobile responsiveness */
 @media (max-width: 768px) {
     #project-description .content {
