@@ -34,7 +34,7 @@ h3 {
 
 /* All p elements */
 p {
-    font-size: 1.6rem;  /* Uniform size for all p */
+    font-size: 1.4rem;  /* Uniform size for all p */
     color: #ccc;
     text-align: justify;
 }
@@ -63,6 +63,7 @@ header h1 {
 header p {
     font-size: 1.4rem;
     color: #ccc;
+    text-align: center;
 }
 
 /* Project Description Section */
@@ -84,7 +85,7 @@ header p {
 }
 
 #project-description p {
-    font-size: 1.6rem;  /* Uniform size for p in project description */
+    font-size: 1.4rem;  /* Uniform size for p in project description */
     color: #ccc;
     text-align: justify;
 }
@@ -141,7 +142,9 @@ footer {
 }
 
 footer p {
-    font-size: 1rem;
+    font-size: 1.4rem;
+    color: #ccc;
+    text-align: center;
 }
 
 /* Footer Links Styling */
@@ -196,7 +199,7 @@ header a:hover {
     }
 
     header p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     #project-description h2 {
@@ -204,6 +207,6 @@ header a:hover {
     }
 
     #project-description p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
