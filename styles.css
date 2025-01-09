@@ -98,16 +98,17 @@ a:hover {
     margin-top: 20px; /* Adds space between text and image */
 }
 
-/* Footer Styling */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+/* Footer Links Styling */
+footer a {
+    color: #a7d0ff; /* Default link color */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em; /* Increased font size */
 }
 
-footer p {
-    font-size: 1em;
+footer a:hover {
+    color: #76b8e7; /* Change color on hover */
+    font-size: 1.6em; /* Slightly larger font on hover */
 }
 
 /* For mobile responsiveness */
