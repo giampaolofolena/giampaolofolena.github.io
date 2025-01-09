@@ -185,12 +185,4 @@ header a:hover {
     #project-description img {
         max-width: 100%; /* Ensure the image fits within the viewport */
     }
-
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    header p {
-        font-size: 1em;
-    }
 }
