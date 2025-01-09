@@ -5,18 +5,18 @@
     box-sizing: border-box;
 }
 
-/* Body and overall page layout */
+/* Body styling */
 body {
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #1b1b1b;
-    color: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f1f1f;
+    color: #fff;
     line-height: 1.6;
 }
 
-/* Container to center content */
+/* Container for centering content */
 .container {
     width: 90%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -24,23 +24,23 @@ body {
 /* Header styling */
 header {
     text-align: center;
-    padding: 50px 0;
-    background-color: #1b1b1b;
+    padding: 80px 0;
+    background-color: #1f1f1f;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     color: #fff;
 }
 
 header p {
-    font-size: 1.2em;
-    color: #ddd;
+    font-size: 1.4em;
+    color: #ccc;
 }
 
-/* Section Styling */
+/* Section styling */
 section {
-    padding: 40px 0;
+    padding: 50px 0;
     text-align: center;
     border-bottom: 1px solid #333;
 }
@@ -57,10 +57,42 @@ section p {
 }
 
 section a {
-    color: #00aaff;
+    color: #a7d0ff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 section a:hover {
-    color
+    color: #76b8e7;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}
