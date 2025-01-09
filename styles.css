@@ -1,47 +1,66 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    box-sizing: border-box;
 }
 
+/* Body and overall page layout */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #1b1b1b;
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+/* Container to center content */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
     text-align: center;
+    padding: 50px 0;
+    background-color: #1b1b1b;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+header h1 {
+    font-size: 3em;
+    color: #fff;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+header p {
+    font-size: 1.2em;
+    color: #ddd;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-h2 {
-    color: #333;
-}
-
+/* Section Styling */
 section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 1px solid #333;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
 }
+
+section p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+section a {
+    color: #00aaff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+section a:hover {
+    color
