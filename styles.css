@@ -1,7 +1,8 @@
 /* General Styles */
 html {
-    font-size: 18px;  /* Increase base font size */
+    font-size: 16px;  /* Base font size */
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #1f1f1f;
@@ -9,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    font-size: 1rem;  /* Inherit base font size (16px) */
 }
 
 .container {
@@ -18,29 +20,32 @@ body {
     padding: 20px;
 }
 
-a {
-    color: #a7d0ff; /* Default link color */
-    text-decoration: none; /* Remove underline */
-    font-size: 1.5em; /* Adjust the font size */
-    margin: 0 10px; /* Space between links */
-    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and font size */
-}
-
+/* All h2 elements */
 h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    font-size: 2.5rem;  /* Uniform size for all h2 */
     color: #fff;
 }
 
+/* All h3 elements */
 h3 {
-    font-size: 1.3em;
+    font-size: 2rem;  /* Uniform size for all h3 */
+    color: #fff;
 }
 
+/* All p elements */
 p {
-    font-size: 1.2em;
+    font-size: 1.6rem;  /* Uniform size for all p */
     color: #ccc;
-    margin: 0 auto;
-    text-align: center;
+    text-align: justify;
+}
+
+/* All a (link) elements */
+a {
+    color: #a7d0ff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.5rem; /* Uniform size for all links */
+    margin: 0 10px; /* Space between links */
+    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and font size */
 }
 
 /* Header */
@@ -51,30 +56,14 @@ header {
 }
 
 header h1 {
-    font-size: 3.5em;
+    font-size: 3.5rem;  /* Larger font size for header */
     color: #fff;
 }
 
 header p {
-    font-size: 1em;
+    font-size: 1.4rem;
     color: #ccc;
 }
-
-/* Header Link Styling */
-header a {
-    color: #a7d0ff; /* Default link color */
-    text-decoration: none; /* Remove underline */
-    font-size: 2em; /* Adjust the font size */
-    margin: 0 10px; /* Space between links */
-    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and font size */
-}
-
-header a:hover {
-    color: #76b8e7; /* Hover color change */
-    font-size: 2.1em; /* Increase font size slightly on hover */
-    text-decoration: underline; /* Underline on hover for better visibility */
-}
-
 
 /* Project Description Section */
 #project-description {
@@ -83,19 +72,19 @@ header a:hover {
     border-bottom: 1px solid #333;
 }
 
-
 #project-description h2 {
-    font-size: 1.5em;
+    font-size: 2.5rem;  /* Uniform size for h2 in project description */
     margin-bottom: 20px;
     color: #fff;
 }
 
 #project-description h3 {
-    font-size: 1.3em;
+    font-size: 2rem;  /* Uniform size for h3 in project description */
+    color: #fff;
 }
 
 #project-description p {
-    font-size: 1.2em;
+    font-size: 1.6rem;  /* Uniform size for p in project description */
     color: #ccc;
     text-align: justify;
 }
@@ -117,7 +106,6 @@ header a:hover {
 #project-description a:hover {
     color: #76b8e7;
 }
-
 
 /* Flexbox for content with 50-50 split */
 #project-description .content {
@@ -153,7 +141,7 @@ footer {
 }
 
 footer p {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 /* Footer Links Styling */
@@ -161,14 +149,28 @@ footer a {
     color: #a7d0ff; /* Default link color */
     text-decoration: none;
     margin: 0 10px;
-    font-size: 3em; /* Increased font size */
+    font-size: 1.5rem; /* Uniform font size for all footer links */
 }
 
 footer a:hover {
     color: #76b8e7; /* Change color on hover */
-    font-size: 3.1em; /* Slightly larger font on hover */
+    font-size: 1.6rem; /* Slightly larger font on hover */
 }
 
+/* Header Link Styling */
+header a {
+    color: #a7d0ff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.8rem; /* Uniform font size for all header links */
+    margin: 0 10px; /* Space between links */
+    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and font size */
+}
+
+header a:hover {
+    color: #76b8e7; /* Hover color change */
+    font-size: 1.9rem; /* Increase font size slightly on hover */
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
 
 /* For mobile responsiveness */
 @media (max-width: 768px) {
@@ -187,5 +189,21 @@ footer a:hover {
 
     #project-description img {
         max-width: 100%; /* Ensure the image fits within the viewport */
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    #project-description h2 {
+        font-size: 1.8rem;
+    }
+
+    #project-description p {
+        font-size: 1.2rem;
     }
 }
