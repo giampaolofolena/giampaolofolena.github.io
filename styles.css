@@ -23,7 +23,7 @@ header {
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     color: #fff;
 }
 
@@ -51,6 +51,7 @@ section p {
     color: #ccc;
 }
 
+/* Flexbox for content */
 section .content {
     display: flex;
     justify-content: space-between;
@@ -58,8 +59,18 @@ section .content {
     gap: 30px;
 }
 
+section .text {
+    flex: 1;
+    text-align: left;
+}
+
+section .image {
+    flex: 1;
+    text-align: center;
+}
+
 section img {
-    max-width: 45%;
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
@@ -77,34 +88,10 @@ footer p {
 }
 
 footer a {
-    color: #a7d0ff;
+    color: #a7d0ff; /* Default color */
     text-decoration: none;
     margin: 0 10px;
     font-size: 1.2em;
-}
-
-footer a:hover {
-    color: #76b8e7;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* Add styles for better visual hierarchy */
-h3 {
-    margin-top: 30px;
-    font-size: 1.5em;
-    color: #ccc;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
 }
 
 /* Remove hover color change for links */
@@ -112,6 +99,9 @@ footer a:hover {
     color: inherit; /* No color change on hover */
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* For mobile responsiveness */
 @media (max-width: 768px) {
@@ -120,8 +110,16 @@ footer a:hover {
         text-align: center;
     }
 
+    section .text {
+        text-align: center;
+    }
+
+    section .image {
+        margin-top: 20px;
+    }
+
     section img {
-        max-width: 100%;
+        max-width: 90%;
     }
 
     header h1 {
