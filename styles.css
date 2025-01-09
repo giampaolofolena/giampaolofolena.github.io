@@ -39,7 +39,8 @@ h3 {
 p {
     font-size: 1.2em;
     color: #ccc;
-    text-align: justify;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Header */
