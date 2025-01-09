@@ -1,80 +1,76 @@
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1f1f1f;
+    color: #fff;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
 }
 
 /* Header */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 0;
     text-align: center;
+    padding: 60px 0;
+    background-color: #1f1f1f;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 3.5em;
+    color: #fff;
 }
 
 header p {
-    font-size: 1.5em;
+    font-size: 1.4em;
+    color: #ccc;
 }
 
-/* Section Styling */
-section {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Project Description Section */
+#project-description {
+    padding: 80px 0;
+    background-color: #282828;
+    border-bottom: 1px solid #333;
 }
 
-section h2 {
+#project-description h2 {
     font-size: 2.5em;
-    color: #333;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
-ul {
+#project-description p {
+    font-size: 1.2em;
+    color: #ccc;
+    text-align: justify;
+}
+
+#project-description ul {
     list-style-type: none;
     padding: 0;
 }
 
-ul li {
-    font-size: 1.2em;
+#project-description ul li {
     margin: 10px 0;
 }
 
-ul li strong {
-    font-weight: bold;
+#project-description a {
+    color: #a7d0ff;
+    text-decoration: none;
 }
 
-ul li em {
-    font-style: italic;
+#project-description a:hover {
+    color: #76b8e7;
 }
 
-/* Styling for Links */
-a {
-    color: #1a73e8;  /* Default link color */
-    text-decoration: none;  /* Remove underline */
-}
-
-a:hover {
-    color: #d32f2f;  /* Change color on hover */
-    text-decoration: underline;  /* Underline link on hover */
-}
-
-/* Flexbox for Text and Image */
-#project-description {
+/* Flexbox for content */
+#project-description .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,11 +87,24 @@ a:hover {
     text-align: center;
 }
 
+/* Ensure the images are responsive and fit the width of the window */
 #project-description img {
-    max-width: 100%;  /* Ensures the image scales within the container */
-    height: auto;     /* Maintains aspect ratio */
+    max-width: 100%; /* Makes image width responsive */
+    height: auto;   /* Maintains the aspect ratio */
+    margin-top: 20px;
     border-radius: 8px;
-    margin-top: 20px; /* Adds space between text and image */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+}
+
+footer p {
+    font-size: 1em;
 }
 
 /* Footer Links Styling */
@@ -113,8 +122,8 @@ footer a:hover {
 
 /* For mobile responsiveness */
 @media (max-width: 768px) {
-    #project-description {
-        flex-direction: column; /* Stack text and image on smaller screens */
+    #project-description .content {
+        flex-direction: column;
         text-align: center;
     }
 
@@ -127,11 +136,11 @@ footer a:hover {
     }
 
     #project-description img {
-        max-width: 90%; /* Limit image width on smaller screens */
+        max-width: 100%; /* Ensure the image fits within the viewport */
     }
 
     header h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     header p {
