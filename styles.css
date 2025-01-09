@@ -107,6 +107,12 @@ ul li {
     margin: 10px 0;
 }
 
+/* Remove hover color change for links */
+footer a:hover {
+    color: inherit; /* No color change on hover */
+}
+
+
 /* For mobile responsiveness */
 @media (max-width: 768px) {
     section .content {
