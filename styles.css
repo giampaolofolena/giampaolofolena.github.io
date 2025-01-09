@@ -69,23 +69,6 @@ header p {
     color: #76b8e7;
 }
 
-/* Flexbox for content */
-#project-description .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
-
-#project-description .text {
-    flex: 1;
-    text-align: left;
-}
-
-#project-description .image-container {
-    flex: 1;
-    text-align: center;
-}
 
 /* Flexbox for content with 50-50 split */
 #project-description .content {
