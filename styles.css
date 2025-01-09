@@ -73,12 +73,29 @@ a:hover {
     text-decoration: underline;  /* Underline link on hover */
 }
 
-/* Styling for Images */
+/* Flexbox for Text and Image */
+#project-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+#project-description .text {
+    flex: 1;
+    text-align: left;
+}
+
+#project-description .image-container {
+    flex: 1;
+    text-align: center;
+}
+
 #project-description img {
     max-width: 100%;  /* Ensures the image scales within the container */
     height: auto;     /* Maintains aspect ratio */
     border-radius: 8px;
-    margin-top: 20px; /* Adds some space between the text and image */
+    margin-top: 20px; /* Adds space between text and image */
 }
 
 /* Footer Styling */
@@ -95,6 +112,23 @@ footer p {
 
 /* For mobile responsiveness */
 @media (max-width: 768px) {
+    #project-description {
+        flex-direction: column; /* Stack text and image on smaller screens */
+        text-align: center;
+    }
+
+    #project-description .text {
+        text-align: center;
+    }
+
+    #project-description .image-container {
+        margin-top: 20px;
+    }
+
+    #project-description img {
+        max-width: 90%; /* Limit image width on smaller screens */
+    }
+
     header h1 {
         font-size: 2em;
     }
@@ -103,15 +137,11 @@ footer p {
         font-size: 1.2em;
     }
 
-    section h2 {
+    #project-description h2 {
         font-size: 2em;
     }
 
-    ul li {
-        font-size: 1.1em;
-    }
-
-    #project-description img {
-        max-width: 60%;  /* Limit image width on smaller screens */
+    #project-description p {
+        font-size: 1em;
     }
 }
