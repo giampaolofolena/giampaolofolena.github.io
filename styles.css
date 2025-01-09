@@ -15,6 +15,14 @@ body {
     padding: 20px;
 }
 
+a {
+    color: #a7d0ff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 2em; /* Adjust the font size */
+    margin: 0 10px; /* Space between links */
+    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and font size */
+}
+
 /* Header */
 header {
     text-align: center;
