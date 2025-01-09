@@ -87,12 +87,29 @@ header p {
     text-align: center;
 }
 
-/* Ensure the images are responsive and fit the width of the window */
+/* Flexbox for content with 50-50 split */
+#project-description .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+#project-description .text {
+    flex: 1;  /* Take up 50% of the width */
+    text-align: left;
+}
+
+#project-description .image {
+    flex: 1;  /* Take up 50% of the width */
+    text-align: center;
+}
+
 #project-description img {
-    max-width: 100%; /* Makes image width responsive */
-    height: auto;   /* Maintains the aspect ratio */
-    margin-top: 20px;
-    border-radius: 8px;
+    max-width: 100%;  /* Ensure image takes up full width of its container */
+    height: auto;     /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;   /* Center the image horizontally */
 }
 
 /* Footer Styling */
