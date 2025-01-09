@@ -6,6 +6,80 @@
     <title>Your Scientific Profile</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Scrollable page styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1f1f1f;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #1f1f1f;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            color: #fff;
+        }
+
+        header p {
+            font-size: 1.4em;
+            color: #ccc;
+        }
+
+        section {
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 1px solid #333;
+            background-color: #282828;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        section p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+
+        section iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            color: #aaa;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,15 +91,35 @@
     </header>
 
     <main>
-        <section id="projects">
+        <!-- Quenches in Rough Landscapes -->
+        <section id="quenches">
             <div class="container">
-                <h2>Research Projects</h2>
-                <ul>
-                    <li><a href="quenches.html">Quenches in Rough Landscapes</a></li>
-                    <li><a href="fluctuations.html">Heterogeneous Fluctuations in Mean-Field Models</a></li>
-                    <li><a href="cage-geometry.html">Cage Geometry and Compression of Hard-Spheres</a></li>
-                    <li><a href="two-level.html">Low-Temperature Two-Level Systems</a></li>
-                </ul>
+                <h2>Quenches in Rough Landscapes</h2>
+                <iframe src="quenches.html" title="Quenches in Rough Landscapes"></iframe>
+            </div>
+        </section>
+
+        <!-- Heterogeneous Fluctuations in Mean-Field Models -->
+        <section id="fluctuations">
+            <div class="container">
+                <h2>Heterogeneous Fluctuations in Mean-Field Models</h2>
+                <iframe src="fluctuations.html" title="Heterogeneous Fluctuations in Mean-Field Models"></iframe>
+            </div>
+        </section>
+
+        <!-- Cage Geometry and Compression of Hard-Spheres -->
+        <section id="cage-geometry">
+            <div class="container">
+                <h2>Cage Geometry and Compression of Hard-Spheres</h2>
+                <iframe src="cage-geometry.html" title="Cage Geometry and Compression of Hard-Spheres"></iframe>
+            </div>
+        </section>
+
+        <!-- Low-Temperature Two-Level Systems -->
+        <section id="two-level">
+            <div class="container">
+                <h2>Low-Temperature Two-Level Systems</h2>
+                <iframe src="two-level.html" title="Low-Temperature Two-Level Systems"></iframe>
             </div>
         </section>
     </main>
