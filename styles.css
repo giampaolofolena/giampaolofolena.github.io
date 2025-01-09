@@ -1,98 +1,122 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1f1f1f;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
-/* Body styling */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #1f1f1f;
-    color: #fff;
-    line-height: 1.6;
-}
+        /* Container for centering content */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-/* Container for centering content */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-}
+        /* Header */
+        header {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #1f1f1f;
+        }
 
-/* Header styling */
-header {
-    text-align: center;
-    padding: 80px 0;
-    background-color: #1f1f1f;
-}
+        header h1 {
+            font-size: 3.5em;
+            color: #fff;
+        }
 
-header h1 {
-    font-size: 3.5em;
-    color: #fff;
-}
+        header p {
+            font-size: 1.4em;
+            color: #ccc;
+        }
 
-header p {
-    font-size: 1.4em;
-    color: #ccc;
-}
+        /* Section Styling */
+        section {
+            padding: 100px 0;
+            text-align: center;
+            background-color: #282828;
+            border-bottom: 1px solid #333;
+        }
 
-/* Section styling */
-section {
-    padding: 50px 0;
-    text-align: center;
-    border-bottom: 1px solid #333;
-}
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
 
-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #fff;
-}
+        section p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
 
-section p {
-    font-size: 1.2em;
-    color: #ccc;
-}
+        section .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
 
-section a {
-    color: #a7d0ff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+        section img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 8px;
+        }
 
-section a:hover {
-    color: #76b8e7;
-}
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            color: #aaa;
+        }
 
-/* Footer styling */
-footer {
-    background-color: #1f1f1f;
-    padding: 20px;
-    text-align: center;
-    color: #aaa;
-}
+        footer p {
+            font-size: 1em;
+        }
 
-footer p {
-    font-size: 1em;
-}
+        footer a {
+            color: #a7d0ff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5em;
-    }
+        footer a:hover {
+            color: #76b8e7;
+        }
 
-    header p {
-        font-size: 1.2em;
-    }
+        html {
+            scroll-behavior: smooth;
+        }
 
-    section h2 {
-        font-size: 2em;
-    }
+        /* For mobile responsiveness */
+        @media (max-width: 768px) {
+            section .content {
+                flex-direction: column;
+                text-align: center;
+            }
 
-    section p {
-        font-size: 1em;
-    }
-}
+            section img {
+                max-width: 100%;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+
+            section h2 {
+                font-size: 2em;
+            }
+
+            section p {
+                font-size: 1em;
+            }
+        }
+    </style>
