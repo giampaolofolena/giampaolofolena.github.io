@@ -120,6 +120,19 @@ footer a:hover {
     font-size: 3.1em; /* Slightly larger font on hover */
 }
 
+/* Header Links Styling */
+header a {
+    color: #a7d0ff; /* Default link color */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 3em; /* Increased font size */
+}
+
+header a:hover {
+    color: #76b8e7; /* Change color on hover */
+    font-size: 3.1em; /* Slightly larger font on hover */
+}
+
 /* For mobile responsiveness */
 @media (max-width: 768px) {
     #project-description .content {
