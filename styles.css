@@ -73,6 +73,14 @@ a:hover {
     text-decoration: underline;  /* Underline link on hover */
 }
 
+/* Styling for Images */
+#project-description img {
+    max-width: 100%;  /* Ensures the image scales within the container */
+    height: auto;     /* Maintains aspect ratio */
+    border-radius: 8px;
+    margin-top: 20px; /* Adds some space between the text and image */
+}
+
 /* Footer Styling */
 footer {
     background-color: #333;
@@ -101,5 +109,9 @@ footer p {
 
     ul li {
         font-size: 1.1em;
+    }
+
+    #project-description img {
+        max-width: 60%;  /* Limit image width on smaller screens */
     }
 }
