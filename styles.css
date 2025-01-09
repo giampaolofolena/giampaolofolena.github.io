@@ -1,6 +1,6 @@
 /* General Styles */
 html {
-    font-size: 16px;  /* Base font size */
+    font-size: 18px;  /* Base font size */
 }
 
 body {
@@ -34,7 +34,7 @@ h3 {
 
 /* All p elements */
 p {
-    font-size: 1.4rem;  /* Uniform size for all p */
+    font-size: 1.5rem;  /* Uniform size for all p */
     color: #ccc;
     text-align: justify;
 }
@@ -56,12 +56,12 @@ header {
 }
 
 header h1 {
-    font-size: 3.5rem;  /* Larger font size for header */
+    font-size: 3rem;  /* Larger font size for header */
     color: #fff;
 }
 
 header p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #ccc;
     text-align: center;
 }
@@ -85,7 +85,7 @@ header p {
 }
 
 #project-description p {
-    font-size: 1.4rem;  /* Uniform size for p in project description */
+    font-size: 1.5rem;  /* Uniform size for p in project description */
     color: #ccc;
     text-align: justify;
 }
@@ -142,7 +142,7 @@ footer {
 }
 
 footer p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #ccc;
     text-align: center;
 }
@@ -195,18 +195,18 @@ header a:hover {
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     header p {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     #project-description h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     #project-description p {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 }
