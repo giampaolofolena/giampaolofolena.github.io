@@ -5,125 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Scientific Profile</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #1f1f1f;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        /* Container for centering content */
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Header */
-        header {
-            text-align: center;
-            padding: 60px 0;
-            background-color: #1f1f1f;
-        }
-
-        header h1 {
-            font-size: 3.5em;
-            color: #fff;
-        }
-
-        header p {
-            font-size: 1.4em;
-            color: #ccc;
-        }
-
-        /* Section Styling */
-        section {
-            padding: 100px 0;
-            text-align: center;
-            background-color: #282828;
-            border-bottom: 1px solid #333;
-        }
-
-        section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #fff;
-        }
-
-        section p {
-            font-size: 1.2em;
-            color: #ccc;
-        }
-
-        footer {
-            background-color: #1f1f1f;
-            padding: 20px;
-            text-align: center;
-            color: #aaa;
-        }
-
-        footer p {
-            font-size: 1em;
-        }
-
-        footer a {
-            color: #a7d0ff;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 1.2em;
-        }
-
-        footer a:hover {
-            color: #76b8e7;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Add styles for better visual hierarchy */
-        h3 {
-            margin-top: 30px;
-            font-size: 1.5em;
-            color: #ccc;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 10px 0;
-        }
-
-        /* For mobile responsiveness */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
-            }
-
-            header p {
-                font-size: 1.2em;
-            }
-
-            section h2 {
-                font-size: 2em;
-            }
-
-            section p {
-                font-size: 1em;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <script src="loadPublications.js"></script>
 </head>
 <body>
     <header>
@@ -139,15 +22,16 @@
         <section id="quenches">
             <div class="container">
                 <h2>Quenches in Rough Landscapes</h2>
-                <p>
-                    This project investigates the interplay between dynamics and statics in the mean-field p-spin spherical model. The focus was to explore dynamical phase transitions and how asymptotic states can retain memory of their initial conditions, challenging previous assumptions in glassy systems. The findings show that memory retention can occur even when the system starts from a completely random configuration, questioning the validity of the weak ergodicity breaking hypothesis.
-                </p>
-                <h3>Relevant Articles</h3>
-                <ul>
-                    <li><a href="https://link.aps.org/doi/10.1103/PhysRevX.10.031045" target="_blank">Rethinking Mean-Field Glassy Dynamics and Its Relation with the Energy Landscape: The Surprising Case of the Spherical Mixed p-Spin Model</a></li>
-                    <li><a href="https://dx.doi.org/10.1088/1742-5468/abe29f" target="_blank">Gradient descent dynamics in the mixed p-spin spherical model: finite-size simulations and comparison with mean-field integration</a></li>
-                    <li><a href="https://scipost.org/SciPostPhys.15.3.109" target="_blank">On weak ergodicity breaking in mean-field spin glasses</a></li>
-                </ul>
+                <div class="content">
+                    <div>
+                        <p>
+                            This project investigates the interplay between dynamics and statics in the mean-field p-spin spherical model. The focus was to explore dynamical phase transitions and how asymptotic states can retain memory of their initial conditions, challenging previous assumptions in glassy systems.
+                        </p>
+                        <h3>Relevant Articles</h3>
+                        <ul id="quenches-publications"></ul> <!-- Publications will be inserted here -->
+                    </div>
+                    <img src="path/to/quenches-image.jpg" alt="Quenches in Rough Landscapes Image">
+                </div>
             </div>
         </section>
 
@@ -155,14 +39,16 @@
         <section id="fluctuations">
             <div class="container">
                 <h2>Heterogeneous Fluctuations in Mean-Field Models</h2>
-                <p>
-                    In this project, we focused on understanding the heterogeneous fluctuations in mean-field glass models. By utilizing the replica method and conducting numerical simulations, we examined non-Gaussian fluctuations, particularly those that arise near the glass transition. Our work has provided valuable insights into the connection between these fluctuations and single-particle correlations.
-                </p>
-                <h3>Relevant Articles</h3>
-                <ul>
-                    <li><a href="https://link.aps.org/doi/10.1103/PhysRevE.106.024605" target="_blank">Equilibrium fluctuations in mean-field disordered models</a></li>
-                    <li><a href="https://link.aps.org/doi/10.1103/PhysRevLett.128.175501" target="_blank">Local Dynamical Heterogeneity in Simple Glass Formers</a></li>
-                </ul>
+                <div class="content">
+                    <div>
+                        <p>
+                            In this project, we focused on understanding the heterogeneous fluctuations in mean-field glass models. By utilizing the replica method and conducting numerical simulations, we examined non-Gaussian fluctuations, particularly those that arise near the glass transition. Our work has provided valuable insights into the connection between these fluctuations and single-particle correlations.
+                        </p>
+                        <h3>Relevant Articles</h3>
+                        <ul id="fluctuations-publications"></ul> <!-- Publications will be inserted here -->
+                    </div>
+                    <img src="path/to/fluctuations-image.jpg" alt="Heterogeneous Fluctuations Image">
+                </div>
             </div>
         </section>
 
@@ -170,14 +56,16 @@
         <section id="cage-geometry">
             <div class="container">
                 <h2>Cage Geometry and Compression of Hard-Spheres</h2>
-                <p>
-                    This research explores the geometry of random cages formed by hard spheres. We developed a minimal model to study these cages in infinite-dimensional limits and examined their behavior in finite dimensions. Additionally, the work on jamming transitions across high-dimensional systems contributed to the understanding of the universality class for hard spheres.
-                </p>
-                <h3>Relevant Articles</h3>
-                <ul>
-                    <li><a href="https://link.aps.org/doi/10.1103/PhysRevE.109.024125" target="_blank">Glasslike caging with random planes</a></li>
-                    <li><a href="https://arxiv.org/abs/2410.05784" target="_blank">Jamming the Random Lorentz Gas: Configurational Entropy, Crunching Geometry, and Critical Universality</a></li>
-                </ul>
+                <div class="content">
+                    <div>
+                        <p>
+                            This research explores the geometry of random cages formed by hard spheres. We developed a minimal model to study these cages in infinite-dimensional limits and examined their behavior in finite dimensions. Additionally, the work on jamming transitions across high-dimensional systems contributed to the understanding of the universality class for hard spheres.
+                        </p>
+                        <h3>Relevant Articles</h3>
+                        <ul id="cage-geometry-publications"></ul> <!-- Publications will be inserted here -->
+                    </div>
+                    <img src="path/to/cage-geometry-image.jpg" alt="Cage Geometry Image">
+                </div>
             </div>
         </section>
 
@@ -185,13 +73,16 @@
         <section id="two-level">
             <div class="container">
                 <h2>Low-Temperature Two-Level Systems</h2>
-                <p>
-                    This project focuses on the study of low-temperature glass phases and the exploration of soft anharmonic spin glasses. We uncover connections between linear excitations and non-linear two-level systems, which contribute to the understanding of low-temperature anomalies in glasses.
-                </p>
-                <h3>Relevant Articles</h3>
-                <ul>
-                    <li><a href="https://dx.doi.org/10.1088/1742-5468/ac6253" target="_blank">Marginal stability of soft anharmonic mean field spin glasses</a></li>
-                </ul>
+                <div class="content">
+                    <div>
+                        <p>
+                            This project focuses on the study of low-temperature glass phases and the exploration of soft anharmonic spin glasses. We uncover connections between linear excitations and non-linear two-level systems, which contribute to the understanding of low-temperature anomalies in glasses.
+                        </p>
+                        <h3>Relevant Articles</h3>
+                        <ul id="two-level-publications"></ul> <!-- Publications will be inserted here -->
+                    </div>
+                    <img src="path/to/two-level-image.jpg" alt="Two-Level Systems Image">
+                </div>
             </div>
         </section>
 
@@ -199,13 +90,16 @@
         <section id="algorithmic-chemistry">
             <div class="container">
                 <h2>Algorithmic Chemistry: Emergence of Enzymes in Artificial Chemistry</h2>
-                <p>
-                    This research explores the emergence of enzymatic functions within an artificial chemistry framework. By using an algorithmic model, we investigate how enzymes, defined as cyclic functions that combine two functions to produce a new one, can form autocatabolic networks. These networks sustain and amplify themselves, fostering complexity growth and enabling the emergence of self-replication and selection mechanisms.
-                </p>
-                <h3>Relevant Articles</h3>
-                <ul>
-                    <li><a href="https://direct.mit.edu/isal/proceedings/isal2024/36/62/123444" target="_blank">On the Emergence of Enzymes in an Artificial Chemistry</a></li>
-                </ul>
+                <div class="content">
+                    <div>
+                        <p>
+                            This research explores the emergence of enzymatic functions within an artificial chemistry framework. By using an algorithmic model, we investigate how enzymes, defined as cyclic functions that combine two functions to produce a new one, can form autocatabolic networks. These networks sustain and amplify themselves, fostering complexity growth and enabling the emergence of self-replication and selection mechanisms.
+                        </p>
+                        <h3>Relevant Articles</h3>
+                        <ul id="algorithmic-chemistry-publications"></ul> <!-- Publications will be inserted here -->
+                    </div>
+                    <img src="path/to/algorithmic-chemistry-image.jpg" alt="Algorithmic Chemistry Image">
+                </div>
             </div>
         </section>
     </main>
@@ -214,10 +108,10 @@
         <div class="container">
             <p>&copy; 2025 Your Name</p>
             <div>
-                <a href="https://scholar.google.com/citations?user=Kb3X1E0AAAAJ&hl=en" target="_blank">
+                <a href="https://scholar.google.com/citations?user=XXXX" target="_blank">
                     <i class="fas fa-graduation-cap"></i> Google Scholar
                 </a>
-                <a href="https://arxiv.org/search/?query=Folena%2C+Giampaolo&searchtype=all&source=header" target="_blank">
+                <a href="https://arxiv.org/abs/XXXX" target="_blank">
                     <i class="fab fa-archway"></i> arXiv
                 </a>
             </div>
