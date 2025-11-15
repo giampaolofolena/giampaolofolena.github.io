@@ -9,7 +9,7 @@ body {
     /* background-color: #1f1f1f; */
     background: url('images/basins.svg') no-repeat center center fixed;
     background-size: cover;
-    color: #1f1f1f;
+    color: #fff;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -26,13 +26,13 @@ body {
 /* All h2 elements */
 h2 {
     font-size: 2.5rem;  /* Uniform size for all h2 */
-    color: #1f1f1f;;
+    color: #fff;;
 }
 
 /* All h3 elements */
 h3 {
     font-size: 2rem;  /* Uniform size for all h3 */
-    color: #1f1f1f;;
+    color: #fff;;
 }
 
 /* All p elements */
