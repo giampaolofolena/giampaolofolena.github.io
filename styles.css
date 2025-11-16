@@ -55,9 +55,13 @@ a {
 header {
     text-align: center;
     padding: 60px 0;
-    background-color: #1f1f1f;
-    background: black url('images/basins.svg') no-repeat center center fixed;
-    background-size: 100% auto; 
+
+    background-color: #1f1f1f;                 /* fallback / behind SVG */
+    background-image: url('images/basins.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;             /* or 'cover' */
+    /* background-attachment: fixed; */      /* often buggy on non-body elements */
 }
 
 header h1 {
