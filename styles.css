@@ -66,12 +66,12 @@ header {
 
 header h1 {
     font-size: 3rem;  /* Larger font size for header */
-    color: #fff;
+    color: #000000;
 }
 
 header p {
     font-size: 1.5rem;
-    color: #ccc;
+    color: #1f1f1f;
     text-align: center;
 }
 
@@ -171,7 +171,7 @@ footer a:hover {
 
 /* Header Link Styling */
 header a {
-    color: #a7d0ff; /* Default link color */
+    color: #78C211; /* Default link color */
     text-decoration: none; /* Remove underline */
     font-size: 1.8rem; /* Uniform font size for all header links */
     margin: 0 10px; /* Space between links */
@@ -179,7 +179,7 @@ header a {
 }
 
 header a:hover {
-    color: #76b8e7; /* Hover color change */
+    color: #436C09; /* Hover color change */
     font-size: 1.9rem; /* Increase font size slightly on hover */
     text-decoration: underline; /* Underline on hover for better visibility */
 }
