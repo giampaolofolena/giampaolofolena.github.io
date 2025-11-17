@@ -65,15 +65,15 @@ header {
 }
 
 header h1 {
-    font-size: 3.5rem;  /* Larger font size for header */
+    font-size: 4rem;  /* Larger font size for header */
     color: #96260D;
     -webkit-text-stroke: 1.5px white;  /* White outline */
 }
 
 header p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #96260D;
-    -webkit-text-stroke: 0.5px white;  /* White outline */
+    -webkit-text-stroke: 0.8px white;  /* White outline */
     text-align: center;
 }
 
@@ -174,17 +174,17 @@ footer a:hover {
 /* Header Link Styling */
 header a {
     color: #78C211; /* Default link color */
-    -webkit-text-stroke: 0.6px white;  /* White outline */
+    -webkit-text-stroke: 0.5px white;  /* White outline */
     text-decoration: none; /* Remove underline */
-    font-size: 1.8rem; /* Uniform font size for all header links */
+    font-size: 2rem; /* Uniform font size for all header links */
     margin: 0 10px; /* Space between links */
     transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and font size */
 }
 
 header a:hover {
     color: #436C09; /* Hover color change */
-    -webkit-text-stroke: 0.6px white;  /* White outline */
-    font-size: 1.9rem; /* Increase font size slightly on hover */
+    -webkit-text-stroke: 0.5px white;  /* White outline */
+    font-size: 2.1rem; /* Increase font size slightly on hover */
     text-decoration: underline; /* Underline on hover for better visibility */
 }
 
