@@ -65,7 +65,7 @@ header {
 }
 
 header h1 {
-    font-size: 3rem;  /* Larger font size for header */
+    font-size: 3.5rem;  /* Larger font size for header */
     color: #96260D;
     -webkit-text-stroke: 1.5px white;  /* White outline */
 }
