@@ -66,13 +66,15 @@ header {
 }
 
 header h1 {
-    background: rgba(0, 0, 0, 0.6);
+    margin: 0 10px; /* Space between links */
+    background: rgba(1, 1, 1, 0.6);
     font-size: 3rem;  /* Larger font size for header */
     color: #96260D;
 }
 
 header p {
-    background: rgba(0, 0, 0, 0.6);
+    margin: 0 10px; /* Space between links */
+    background: rgba(1, 1, 1, 0.6);
     font-size: 1.5rem;
     color: #1f1f1f;
     text-align: center;
@@ -174,7 +176,7 @@ footer a:hover {
 
 /* Header Link Styling */
 header a {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(1, 1, 1, 0.6);
     color: #78C211; /* Default link color */
     text-decoration: none; /* Remove underline */
     font-size: 1.8rem; /* Uniform font size for all header links */
