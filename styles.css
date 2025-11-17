@@ -56,11 +56,11 @@ header {
     text-align: center;
     padding: 60px 0;
 
-    background-color: #1f1f1f;                 /* fallback / behind SVG */
+    background-color: #FFFFFF;                 /* fallback / behind SVG */
     background-image: url('images/basins.svg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 60% auto;             /* or 'cover' */
+    background-size: 80% auto;             /* or 'cover' */
     /* background-attachment: fixed; */      /* often buggy on non-body elements */
 }
 
