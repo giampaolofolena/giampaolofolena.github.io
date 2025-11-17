@@ -60,7 +60,7 @@ header {
     background-image: url('images/basins.svg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100% auto;             /* or 'cover' */
+    background-size: 60% auto;             /* or 'cover' */
     /* background-attachment: fixed; */      /* often buggy on non-body elements */
 }
 
