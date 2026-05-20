@@ -9,6 +9,7 @@
     --accent: #72d0c9;
     --accent-strong: #d77a52;
     --header-text: #5e1d0d;
+    --project-header: #243642;
 }
 
 * {
@@ -79,12 +80,14 @@ a:focus-visible {
 
 header {
     text-align: center;
-    padding: clamp(64px, 9vw, 112px) 0;
-    background-color: #fff;
+    padding: clamp(42px, 6vw, 72px) 0;
+    background-color: var(--project-header);
     border-bottom: 1px solid var(--line);
 }
 
 header.home-header {
+    padding: clamp(64px, 9vw, 112px) 0;
+    background-color: #fff;
     background-image: url('images/basins.svg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -97,11 +100,26 @@ header .container {
 }
 
 header h1 {
+    font-size: clamp(1.9rem, 4vw, 3.1rem);
+    line-height: 1.1;
+    margin-bottom: 0;
+    color: var(--text);
+    text-shadow: none;
+}
+
+header.home-header h1 {
     font-size: clamp(2.5rem, 7vw, 5.25rem);
     line-height: 1;
     margin-bottom: 1.1rem;
-    color: var(--header-text);
-    text-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+    color: #7a170d;
+    -webkit-text-stroke: 1.5px #fff;
+    paint-order: stroke fill;
+    text-shadow:
+        1px 0 0 #fff,
+        -1px 0 0 #fff,
+        0 1px 0 #fff,
+        0 -1px 0 #fff,
+        0 3px 8px rgba(0, 0, 0, 0.16);
 }
 
 header p {
@@ -148,6 +166,7 @@ main section:nth-child(even) {
     background: var(--surface);
 }
 
+.interest-list,
 .timeline,
 .project-list,
 .key-concepts,
@@ -156,11 +175,18 @@ main section:nth-child(even) {
     padding: 0;
 }
 
-.interest-text {
-    max-width: 980px;
-    margin-bottom: 0;
-    font-size: clamp(1.35rem, 2.6vw, 1.9rem);
-    line-height: 1.45;
+.interest-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 0;
+}
+
+.interest-list li {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
     color: var(--muted);
 }
 
@@ -233,6 +259,11 @@ main section:nth-child(even) {
 #project-description .text {
     flex: 1.1;
     text-align: left;
+}
+
+#project-description .text p {
+    font-size: clamp(1.2rem, 1.7vw, 1.42rem);
+    line-height: 1.62;
 }
 
 #project-description .image {
