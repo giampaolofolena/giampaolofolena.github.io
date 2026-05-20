@@ -1,225 +1,328 @@
-/* General Styles */
+:root {
+    color-scheme: dark;
+    --bg: #111315;
+    --surface: #181c20;
+    --surface-strong: #20262b;
+    --text: #f4f1ec;
+    --muted: #c9d0d7;
+    --line: rgba(244, 241, 236, 0.14);
+    --accent: #72d0c9;
+    --accent-strong: #d77a52;
+    --header-text: #5e1d0d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 html {
-    font-size: 14px;  /* Base font size */
+    font-size: 16px;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    
-    background-color: #1f1f1f;
-    /* background: url('images/basins.svg') no-repeat center center fixed;
-    background-size: cover; */
-    color: #fff;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    font-size: 1rem;  /* Inherit base font size (16px) */
+    line-height: 1.65;
+    font-size: 1rem;
 }
 
 .container {
-    width: 90%;
-    max-width: 1100px;
+    width: min(92%, 1100px);
     margin: 0 auto;
-    padding: 20px;
+    padding: clamp(28px, 5vw, 58px) 0;
 }
 
-/* All h2 elements */
-h2 {
-    font-size: 2.5rem;  /* Uniform size for all h2 */
-    color: #fff;
-}
-
-/* All h3 elements */
-h3 {
-    font-size: 2rem;  /* Uniform size for all h3 */
-    color: #fff;
-}
-
-/* All p elements */
+h1,
+h2,
+h3,
 p {
-    font-size: 1.5rem;  /* Uniform size for all p */
-    color: #ccc;
-    text-align: justify;
+    margin-top: 0;
 }
 
-/* All a (link) elements */
+h2 {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+    color: var(--text);
+}
+
+h3 {
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    line-height: 1.25;
+    margin: 2.5rem 0 1rem;
+    color: var(--text);
+}
+
+p {
+    max-width: 68ch;
+    font-size: 1.075rem;
+    color: var(--muted);
+    text-align: left;
+}
+
 a {
-    color: #a7d0ff; /* Default link color */
-    text-decoration: none; /* Remove underline */
-    font-size: 1.5rem; /* Uniform size for all links */
-    margin: 0 10px; /* Space between links */
-    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and font size */
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 0.2em;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
 }
 
-/* Header */
+a:hover,
+a:focus-visible {
+    color: #b7f3ef;
+    text-decoration-color: currentColor;
+}
+
 header {
     text-align: center;
-    padding: 60px 0;
-
-    background-color: #FFFFFF;                 /* fallback / behind SVG */
+    padding: clamp(64px, 9vw, 112px) 0;
+    background-color: #f5f0e8;
     background-image: url('images/basins.svg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 80% auto;             /* or 'cover' */
-    /* background-attachment: fixed; */      /* often buggy on non-body elements */
+    background-size: min(920px, 92%) auto;
+    border-bottom: 1px solid var(--line);
+}
+
+header .container {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 header h1 {
-    font-size: 4rem;  /* Larger font size for header */
-    color: #96260D;
-    -webkit-text-stroke: 1.5px white;  /* White outline */
+    font-size: clamp(2.5rem, 7vw, 5.25rem);
+    line-height: 1;
+    margin-bottom: 1.1rem;
+    color: var(--header-text);
+    text-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
 }
 
 header p {
-    font-size: 2.5rem;
-    color: #96260D;
-    -webkit-text-stroke: 0.8px white;  /* White outline */
+    max-width: 760px;
+    margin: 0 auto 1.5rem;
+    font-size: clamp(1.08rem, 2vw, 1.45rem);
+    font-weight: 500;
+    color: var(--header-text);
     text-align: center;
 }
 
-/* Project Description Section */
-#project-description {
-    padding: 80px 0;
-    background-color: #282828;
-    border-bottom: 1px solid #333;
-}
-
-#project-description h2 {
-    font-size: 2.5rem;  /* Uniform size for h2 in project description */
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-#project-description h3 {
-    font-size: 2rem;  /* Uniform size for h3 in project description */
-    color: #fff;
-}
-
-#project-description p {
-    font-size: 1.5rem;  /* Uniform size for p in project description */
-    color: #ccc;
-    text-align: justify;
-}
-
-#project-description ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#project-description ul li {
-    margin: 10px 0;
-}
-
-#project-description a {
-    color: #a7d0ff;
+header a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.6rem;
+    padding: 0.55rem 0.9rem;
+    border: 1px solid rgba(94, 29, 13, 0.28);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.72);
+    color: var(--header-text);
+    font-weight: 500;
     text-decoration: none;
 }
 
-#project-description a:hover {
-    color: #76b8e7;
+header a:hover,
+header a:focus-visible {
+    background: #fff;
+    border-color: rgba(94, 29, 13, 0.48);
+    color: #2f0f07;
 }
 
-/* Flexbox for content with 50-50 split */
+.header-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+main section {
+    border-bottom: 1px solid var(--line);
+}
+
+main section:nth-child(even) {
+    background: var(--surface);
+}
+
+.interest-list,
+.timeline,
+.project-list,
+.key-concepts,
+.article-list {
+    list-style: none;
+    padding: 0;
+}
+
+.interest-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 0;
+}
+
+.interest-list li {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--muted);
+}
+
+.timeline {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+}
+
+.timeline li {
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent-strong);
+}
+
+.timeline p {
+    max-width: none;
+    margin-bottom: 0;
+}
+
+.timeline strong {
+    color: var(--text);
+}
+
+.timeline span {
+    display: block;
+    color: var(--muted);
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.8rem;
+    margin: 0;
+}
+
+.project-list a {
+    display: block;
+    min-height: 100%;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text);
+    text-decoration: none;
+}
+
+.project-list a:hover,
+.project-list a:focus-visible {
+    border-color: rgba(114, 208, 201, 0.6);
+    background: rgba(114, 208, 201, 0.1);
+    color: #fff;
+}
+
+#project-description {
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--line);
+}
+
+#project-description h2 {
+    margin-bottom: 20px;
+}
+
 #project-description .content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+    align-items: flex-start;
+    gap: clamp(28px, 6vw, 72px);
 }
 
 #project-description .text {
-    flex: 1;  /* Take up 50% of the width */
+    flex: 1.1;
     text-align: left;
 }
 
 #project-description .image {
-    flex: 1;  /* Take up 50% of the width */
+    flex: 0.9;
     text-align: center;
 }
 
 #project-description img {
-    max-width: 100%;  /* Ensure image takes up full width of its container */
-    height: auto;     /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin: 0 auto;   /* Center the image horizontally */
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.28);
 }
 
-/* Footer Styling */
+.key-concepts,
+.article-list {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0 0 2rem;
+}
+
+.key-concepts li,
+.article-list li {
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--muted);
+}
+
+.key-concepts strong {
+    color: var(--text);
+}
+
+.article-list a {
+    display: block;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.poster-preview {
+    margin-bottom: 2rem;
+}
+
+.poster-preview a {
+    display: inline-block;
+}
+
+.poster-preview img {
+    width: min(190px, 48vw);
+    border: 1px solid var(--line);
+    background: #fff;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
+}
+
 footer {
-    background-color: #1f1f1f;
-    padding: 20px;
+    background-color: var(--bg);
     text-align: center;
-    color: #aaa;
 }
 
 footer p {
-    font-size: 1.5rem;
-    color: #ccc;
+    max-width: none;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    color: #9fa8b1;
     text-align: center;
 }
 
-/* Footer Links Styling */
-footer a {
-    color: #a7d0ff; /* Default link color */
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.5rem; /* Uniform font size for all footer links */
-}
-
-footer a:hover {
-    color: #76b8e7; /* Change color on hover */
-    font-size: 1.6rem; /* Slightly larger font on hover */
-}
-
-/* Header Link Styling */
-header a {
-    color: #78C211; /* Default link color */
-    -webkit-text-stroke: 0.5px white;  /* White outline */
-    text-decoration: none; /* Remove underline */
-    font-size: 2rem; /* Uniform font size for all header links */
-    margin: 0 10px; /* Space between links */
-    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition for color and font size */
-}
-
-header a:hover {
-    color: #436C09; /* Hover color change */
-    -webkit-text-stroke: 0.5px white;  /* White outline */
-    font-size: 2.1rem; /* Increase font size slightly on hover */
-    text-decoration: underline; /* Underline on hover for better visibility */
-}
-
-/* For mobile responsiveness */
 @media (max-width: 768px) {
     #project-description .content {
         flex-direction: column;
-        text-align: center;
+        gap: 2rem;
     }
 
     #project-description .text {
-        text-align: center;
-    }
-
-    #project-description .image-container {
-        margin-top: 20px;
+        text-align: left;
     }
 
     #project-description img {
-        max-width: 100%; /* Ensure the image fits within the viewport */
+        width: min(100%, 520px);
     }
 
-    header h1 {
-        font-size: 3rem;
-    }
-
-    header p {
-        font-size: 1.5rem;
-    }
-
-    #project-description h2 {
-        font-size: 2rem;
-    }
-
-    #project-description p {
-        font-size: 1.5rem;
+    .project-list {
+        grid-template-columns: 1fr;
     }
 }

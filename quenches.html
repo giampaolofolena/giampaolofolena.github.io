@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quenches in Rough Landscapes</title>
-    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -16,22 +17,17 @@
     <main>
         <section id="project-description">
             <div class="container">
-<!--                 <h2>Project Overview</h2> -->
                 <div class="content">
                     <div class="text">
                         <p>
-                            This project explores the gradient descent dynamics within the mixed p-spin spherical model, a prototypical glass model characterized by a complex energy landscape with numerous minima. 
-                            The system evolves asymptotically towards marginal (aka flat) minima, retaining memory of its initial conditions and reaching energies below the energy threshold, where most stationary points transition into minima. 
-                            Memory retention can persist even when the system begins from a completely random configuration, challenging the validity of the weak ergodicity breaking hypothesis.
+                            Gradient-descent dynamics in mixed p-spin spherical models gives a controlled view of how high-dimensional glassy landscapes remember their initial conditions. This work shows that relaxation approaches marginal, nearly flat minima at energies below the threshold where stationary points become predominantly stable. The resulting asymptotic states can retain measurable memory even from random initial configurations, sharpening the debate around weak ergodicity breaking in mean-field glasses.
                         </p>
                         <h3>Key Concepts</h3>
-                        <p>
-                        <ul>
-                            <li><p><strong>Memory Retention:</strong> The system retains information about its initial conditions as it relaxes towards asymptotic states.</p></li>
-                            <li><p><strong>Energy Below Threshold:</strong> The system's dynamics reaches marginal minima below the threshold energy.</p></li>
-                            <li><p><strong>Weak Ergodicity Breaking:</strong> The project challenges the hypothesis by showing that memory can persist even from random initial configurations.</p></li>
+                        <ul class="key-concepts">
+                            <li><strong>Landscape selection:</strong> Gradient descent selects atypical marginal minima rather than typical threshold states.</li>
+                            <li><strong>Memory retention:</strong> Relaxation preserves information about the initial condition in the asymptotic state.</li>
+                            <li><strong>Weak ergodicity breaking:</strong> Memory can persist even when the initial configuration is fully random.</li>
                         </ul>
-                        </p>
                     </div> 
                     <div class="image">
                         <img src="images/WEB.png" alt="Quenches in Rough Landscapes Image">
@@ -39,19 +35,19 @@
                 </div>
 
                 <h3>Project Poster</h3>
-                    <div style="width: 100%; display: block;">
-                        <a href="PosterQuench.pdf" target="_blank" style="display: inline-block;">
-                            <img src="PosterQuenchPreview.png" alt="Poster Preview" style="display: block; max-width: 20%; height: auto; border: 1px solid #ccc; margin: 0;">
+                    <div class="poster-preview">
+                        <a href="PosterQuench.pdf" target="_blank" rel="noopener">
+                            <img src="PosterQuenchPreview.png" alt="Poster preview for quenches in rough landscapes">
                         </a>
                     </div>
 
                 <h3>Relevant Articles</h3>
-                    <ul>
-                        <li><a href="https://link.aps.org/doi/10.1103/PhysRevX.10.031045" target="_blank">Rethinking Mean-Field Glassy Dynamics and Its Relation with the Energy Landscape: The Surprising Case of the Spherical Mixed p-Spin Model</a></li>
-                        <li><a href="https://dx.doi.org/10.1088/1742-5468/abe29f" target="_blank">Gradient descent dynamics in the mixed p-spin spherical model: finite-size simulations and comparison with mean-field integration</a></li>
-                        <li><a href="https://scipost.org/10.21468/SciPostPhys.15.3.109" target="_blank">On weak ergodicity breaking in mean-field spin glasses</a></li>
-                        <li><a href="https://theses.hal.science/tel-02883385" target="_blank">The mixed p-spin model : selecting, following and losing states</a></li>
-                        <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0378437122007105" target="_blank">Introduction to the dynamics of disordered systems: equilibrium and gradient descent</a></li>
+                    <ul class="article-list">
+                        <li><a href="https://link.aps.org/doi/10.1103/PhysRevX.10.031045" target="_blank" rel="noopener">Rethinking Mean-Field Glassy Dynamics and Its Relation with the Energy Landscape: The Surprising Case of the Spherical Mixed p-Spin Model</a></li>
+                        <li><a href="https://dx.doi.org/10.1088/1742-5468/abe29f" target="_blank" rel="noopener">Gradient descent dynamics in the mixed p-spin spherical model: finite-size simulations and comparison with mean-field integration</a></li>
+                        <li><a href="https://scipost.org/10.21468/SciPostPhys.15.3.109" target="_blank" rel="noopener">On weak ergodicity breaking in mean-field spin glasses</a></li>
+                        <li><a href="https://theses.hal.science/tel-02883385" target="_blank" rel="noopener">The mixed p-spin model: selecting, following and losing states</a></li>
+                        <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0378437122007105" target="_blank" rel="noopener">Introduction to the dynamics of disordered systems: equilibrium and gradient descent</a></li>
                     </ul>
             </div>
         </section>
@@ -59,7 +55,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Giampaolo Folena</p>
+            <p>&copy; 2026 Giampaolo Folena</p>
         </div>
     </footer>
 </body>
