@@ -80,12 +80,15 @@ a:focus-visible {
 header {
     text-align: center;
     padding: clamp(64px, 9vw, 112px) 0;
-    background-color: #f5f0e8;
+    background-color: #fff;
+    border-bottom: 1px solid var(--line);
+}
+
+header.home-header {
     background-image: url('images/basins.svg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: min(920px, 92%) auto;
-    border-bottom: 1px solid var(--line);
+    background-size: min(1280px, 118%) auto;
 }
 
 header .container {
@@ -145,7 +148,6 @@ main section:nth-child(even) {
     background: var(--surface);
 }
 
-.interest-list,
 .timeline,
 .project-list,
 .key-concepts,
@@ -154,18 +156,11 @@ main section:nth-child(even) {
     padding: 0;
 }
 
-.interest-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin: 0;
-}
-
-.interest-list li {
-    padding: 0.5rem 0.8rem;
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.04);
+.interest-text {
+    max-width: 980px;
+    margin-bottom: 0;
+    font-size: clamp(1.35rem, 2.6vw, 1.9rem);
+    line-height: 1.45;
     color: var(--muted);
 }
 
