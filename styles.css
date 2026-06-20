@@ -1,15 +1,20 @@
 :root {
-    color-scheme: dark;
-    --bg: #111315;
-    --surface: #181c20;
-    --surface-strong: #20262b;
-    --text: #f4f1ec;
-    --muted: #c9d0d7;
-    --line: rgba(244, 241, 236, 0.14);
-    --accent: #72d0c9;
-    --accent-strong: #d77a52;
-    --header-text: #5e1d0d;
-    --project-header: #243642;
+    color-scheme: light;
+    --bg: #ffffff;
+    --surface: #f6f7f9;
+    --surface-strong: #eef1f4;
+    --text: #14181c;
+    --heading: #0c1014;
+    --muted: #59636d;
+    --line: #e3e7ec;
+    --line-strong: #d3d9e0;
+    --accent: #d97757;
+    --accent-strong: #b04a2c;
+    --accent-soft: rgba(217, 119, 87, 0.12);
+    --accent-softer: rgba(217, 119, 87, 0.05);
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(15, 23, 42, 0.06);
+    --shadow-md: 0 6px 16px rgba(15, 23, 42, 0.08);
+    --shadow-lg: 0 18px 48px rgba(15, 23, 42, 0.12);
 }
 
 * {
@@ -18,22 +23,25 @@
 
 html {
     font-size: 16px;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
-    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", 'Roboto', "Helvetica Neue", Arial, sans-serif;
     background-color: var(--bg);
     color: var(--text);
     margin: 0;
     padding: 0;
     line-height: 1.65;
     font-size: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
-    width: min(92%, 1100px);
+    width: min(92%, 1080px);
     margin: 0 auto;
-    padding: clamp(28px, 5vw, 58px) 0;
+    padding: clamp(40px, 6vw, 80px) 0;
 }
 
 h1,
@@ -44,54 +52,50 @@ p {
 }
 
 h2 {
-    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
     line-height: 1.15;
-    margin-bottom: 1.25rem;
-    color: var(--text);
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    color: var(--heading);
+    font-weight: 700;
 }
 
 h3 {
-    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    font-size: clamp(1.15rem, 2vw, 1.45rem);
     line-height: 1.25;
+    letter-spacing: -0.01em;
     margin: 2.5rem 0 1rem;
-    color: var(--text);
+    color: var(--heading);
+    font-weight: 600;
 }
 
 p {
-    max-width: 68ch;
-    font-size: 1.075rem;
+    max-width: 70ch;
+    font-size: 1.05rem;
     color: var(--muted);
     text-align: left;
 }
 
 a {
     color: var(--accent);
-    text-decoration: underline;
-    text-decoration-color: transparent;
+    text-decoration: none;
     text-underline-offset: 0.2em;
-    transition: color 0.2s ease, text-decoration-color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+    transition: color 0.18s ease, background-color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
 }
 
 a:hover,
 a:focus-visible {
-    color: #b7f3ef;
-    text-decoration-color: currentColor;
+    color: var(--accent-strong);
+    text-decoration: underline;
 }
+
+/* ---------- Header / hero ---------- */
 
 header {
-    text-align: center;
-    padding: clamp(42px, 6vw, 72px) 0;
-    background-color: var(--project-header);
+    text-align: left;
+    padding: clamp(40px, 6vw, 72px) 0 clamp(32px, 5vw, 56px);
+    background-color: var(--surface);
     border-bottom: 1px solid var(--line);
-}
-
-header.home-header {
-    padding: clamp(64px, 9vw, 112px) 0;
-    background-color: #fff;
-    background-image: url('images/basins.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: min(1600px, 145%) auto;
 }
 
 header .container {
@@ -100,67 +104,51 @@ header .container {
 }
 
 header h1 {
-    font-size: clamp(1.55rem, 3vw, 2.35rem);
+    font-size: clamp(1.6rem, 3.4vw, 2.5rem);
     line-height: 1.1;
+    letter-spacing: -0.02em;
     margin-bottom: 0;
-    color: var(--text);
-    text-shadow: none;
+    color: var(--heading);
+    font-weight: 700;
+}
+
+/* Home page hero — clean, light, Ai2-inspired */
+header.home-header {
+    text-align: center;
+    padding: clamp(72px, 11vw, 132px) 0 clamp(56px, 8vw, 96px);
+    background-color: var(--bg);
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.82)),
+        url('images/basins.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: center center, center center;
+    background-size: cover, min(1500px, 150%) auto;
+    border-bottom: 1px solid var(--line);
 }
 
 header.home-header h1 {
-    font-size: clamp(2.5rem, 7vw, 5.25rem);
-    line-height: 1;
-    margin-bottom: 1.1rem;
-    color: #7a170d;
-    -webkit-text-stroke: 1.5px #fff;
-    paint-order: stroke fill;
-    text-shadow:
-        1px 0 0 #fff,
-        -1px 0 0 #fff,
-        0 1px 0 #fff,
-        0 -1px 0 #fff,
-        0 3px 8px rgba(0, 0, 0, 0.16);
+    font-size: clamp(2.6rem, 7vw, 4.75rem);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    margin-bottom: 1.25rem;
+    color: var(--heading);
+    font-weight: 800;
 }
 
 header p {
-    max-width: 760px;
-    margin: 0 auto 1.5rem;
-    font-size: clamp(1.08rem, 2vw, 1.45rem);
-    font-weight: 500;
-    color: var(--header-text);
-    text-align: center;
+    max-width: 720px;
+    margin: 0 0 1.75rem;
+    font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+    font-weight: 400;
+    color: var(--muted);
+    text-align: left;
 }
 
 header.home-header p {
-    color: #7a170d;
-    -webkit-text-stroke: 0.7px #fff;
-    paint-order: stroke fill;
-    text-shadow:
-        1px 0 0 #fff,
-        -1px 0 0 #fff,
-        0 1px 0 #fff,
-        0 -1px 0 #fff,
-        0 2px 6px rgba(0, 0, 0, 0.12);
-}
-
-header a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 2.6rem;
-    padding: 0.55rem 0.9rem;
-    border: 1px solid rgba(94, 29, 13, 0.28);
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.72);
-    color: var(--header-text);
-    font-weight: 500;
-    text-decoration: none;
-}
-
-header a:hover,
-header a:focus-visible {
-    background: #fff;
-    border-color: rgba(94, 29, 13, 0.48);
-    color: #2f0f07;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--muted);
 }
 
 .header-links {
@@ -169,6 +157,32 @@ header a:focus-visible {
     justify-content: center;
     gap: 0.75rem;
 }
+
+header a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.7rem;
+    padding: 0.6rem 1.15rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 0.98rem;
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+}
+
+header a:hover,
+header a:focus-visible {
+    border-color: var(--accent);
+    color: var(--accent-strong);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+/* ---------- Sections ---------- */
 
 main section {
     border-bottom: 1px solid var(--line);
@@ -190,16 +204,19 @@ main section:nth-child(even) {
 .interest-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: 0.6rem;
     margin: 0;
 }
 
 .interest-list li {
-    padding: 0.5rem 0.8rem;
-    border: 1px solid var(--line);
+    padding: 0.5rem 0.95rem;
+    border: 1px solid var(--line-strong);
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.04);
-    color: var(--muted);
+    background: #fff;
+    color: var(--text);
+    font-size: 0.96rem;
+    font-weight: 500;
+    box-shadow: var(--shadow-sm);
 }
 
 .timeline {
@@ -209,71 +226,87 @@ main section:nth-child(even) {
 }
 
 .timeline li {
-    padding-left: 1rem;
-    border-left: 3px solid var(--accent-strong);
+    padding: 1.1rem 1.25rem;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: var(--shadow-sm);
 }
 
 .timeline p {
     max-width: none;
     margin-bottom: 0;
+    color: var(--text);
 }
 
 .timeline strong {
-    color: var(--text);
+    color: var(--heading);
 }
 
 .timeline span {
     display: block;
     color: var(--muted);
+    font-size: 0.96rem;
 }
 
 .project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 0.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
     margin: 0;
 }
 
 .project-list a {
-    display: block;
+    display: flex;
+    align-items: center;
     min-height: 100%;
-    padding: 1rem 1.1rem;
+    padding: 1.25rem 1.35rem;
     border: 1px solid var(--line);
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.04);
-    color: var(--text);
+    border-radius: 12px;
+    background: #fff;
+    color: var(--heading);
+    font-weight: 600;
     text-decoration: none;
+    box-shadow: var(--shadow-sm);
 }
 
 .project-list a:hover,
 .project-list a:focus-visible {
-    border-color: rgba(114, 208, 201, 0.6);
-    background: rgba(114, 208, 201, 0.1);
-    color: #fff;
+    border-color: var(--accent);
+    color: var(--accent-strong);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    text-decoration: none;
 }
 
 .organization-link {
     display: inline-flex;
     align-items: center;
-    min-height: 2.75rem;
-    padding: 0.65rem 1rem;
-    border: 1px solid rgba(114, 208, 201, 0.42);
-    border-radius: 8px;
-    background: rgba(114, 208, 201, 0.08);
-    color: var(--text);
-    font-weight: 500;
+    min-height: 2.85rem;
+    padding: 0.7rem 1.3rem;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
     text-decoration: none;
+    box-shadow: var(--shadow-sm);
 }
 
 .organization-link:hover,
 .organization-link:focus-visible {
-    border-color: rgba(114, 208, 201, 0.72);
-    background: rgba(114, 208, 201, 0.16);
+    background: var(--accent-strong);
     color: #fff;
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+    text-decoration: none;
 }
 
+/* ---------- Project description pages ---------- */
+
 #project-description {
-    background-color: var(--surface);
+    background-color: var(--bg);
     border-bottom: 1px solid var(--line);
 }
 
@@ -294,8 +327,9 @@ main section:nth-child(even) {
 }
 
 #project-description .text p {
-    font-size: clamp(1.2rem, 1.7vw, 1.42rem);
+    font-size: clamp(1.1rem, 1.6vw, 1.3rem);
     line-height: 1.62;
+    color: var(--text);
 }
 
 #project-description .image {
@@ -308,24 +342,26 @@ main section:nth-child(even) {
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.28);
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-lg);
 }
 
 .key-concepts,
 .article-list {
     display: grid;
-    gap: 0.75rem;
+    gap: 0.85rem;
     margin: 0 0 2rem;
 }
 
 .key-concepts li,
 .article-list li {
-    padding: 0.85rem 1rem;
+    padding: 1.1rem 1.25rem;
     border: 1px solid var(--line);
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    background: #fff;
     color: var(--muted);
+    box-shadow: var(--shadow-sm);
 }
 
 .article-entry {
@@ -343,14 +379,15 @@ main section:nth-child(even) {
 
 .article-title {
     flex: 1 1 20rem;
-    color: var(--text);
-    font-weight: 500;
+    color: var(--heading);
+    font-weight: 600;
     text-decoration: none;
 }
 
 .article-title:hover,
 .article-title:focus-visible {
-    color: #fff;
+    color: var(--accent-strong);
+    text-decoration: underline;
 }
 
 .article-pdf {
@@ -358,21 +395,21 @@ main section:nth-child(even) {
     display: inline-flex;
     align-items: center;
     min-height: 2.1rem;
-    padding: 0.35rem 0.7rem;
-    border: 1px solid rgba(114, 208, 201, 0.42);
-    border-radius: 6px;
-    background: rgba(114, 208, 201, 0.08);
-    color: var(--accent);
-    font-size: 0.88rem;
-    font-weight: 500;
+    padding: 0.35rem 0.85rem;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    font-size: 0.85rem;
+    font-weight: 600;
     text-decoration: none;
 }
 
 .article-pdf:hover,
 .article-pdf:focus-visible {
-    border-color: rgba(114, 208, 201, 0.72);
-    background: rgba(114, 208, 201, 0.16);
+    background: var(--accent);
     color: #fff;
+    text-decoration: none;
 }
 
 .article-summary {
@@ -383,7 +420,7 @@ main section:nth-child(even) {
 }
 
 .key-concepts strong {
-    color: var(--text);
+    color: var(--heading);
 }
 
 .article-list a {
@@ -403,20 +440,24 @@ main section:nth-child(even) {
 .poster-preview img {
     width: min(190px, 48vw);
     border: 1px solid var(--line);
+    border-radius: 8px;
     background: #fff;
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
+    box-shadow: var(--shadow-md);
 }
 
+/* ---------- Footer ---------- */
+
 footer {
-    background-color: var(--bg);
+    background-color: var(--surface-strong);
+    border-top: 1px solid var(--line);
     text-align: center;
 }
 
 footer p {
     max-width: none;
     margin-bottom: 0;
-    font-size: 0.95rem;
-    color: #9fa8b1;
+    font-size: 0.92rem;
+    color: var(--muted);
     text-align: center;
 }
 
