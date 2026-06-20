@@ -1,0 +1,61 @@
+# Giampaolo Folena
+
+> Theoretical physicist studying disordered systems, glassy dynamics, jamming, and algorithmic models of evolving matter. Currently at IFISC, Universitat de les Illes Balears, working on the thermodynamics of the origin of life.
+
+Research interests: mean-field disordered models, out-of-equilibrium dynamics, Monte Carlo simulations, jamming transitions, evolutionary systems, and artificial chemistry.
+
+## Quenches in Rough Landscapes
+
+Project page: https://giampaolofolena.github.io/quenches.html — Gradient-descent dynamics in mixed p-spin spherical models; landscape selection, memory retention, and weak ergodicity breaking in mean-field glasses.
+
+- [Rethinking Mean-Field Glassy Dynamics and Its Relation with the Energy Landscape: The Surprising Case of the Spherical Mixed p-Spin Model](https://link.aps.org/doi/10.1103/PhysRevX.10.031045) — PDF: https://giampaolofolena.github.io/papers/2_PhysRevX_2020.pdf
+- [Gradient descent dynamics in the mixed p-spin spherical model: finite-size simulations and comparison with mean-field integration](https://dx.doi.org/10.1088/1742-5468/abe29f) — PDF: https://giampaolofolena.github.io/papers/3_J._Stat._Mech._2021.pdf
+- [On weak ergodicity breaking in mean-field spin glasses](https://scipost.org/10.21468/SciPostPhys.15.3.109) — PDF: https://giampaolofolena.github.io/papers/8_Scipost_2023.pdf
+- [The mixed p-spin model: selecting, following and losing states (PhD thesis)](https://theses.hal.science/tel-02883385) — PDF: https://giampaolofolena.github.io/papers/1_tesi_dottorato_2020.pdf
+- [Introduction to the dynamics of disordered systems: equilibrium and gradient descent](https://www.sciencedirect.com/science/article/abs/pii/S0378437122007105) — PDF: https://giampaolofolena.github.io/papers/7_J._Phys._A._2022.pdf
+
+## Heterogeneous Fluctuations and Rare Trajectories in Mean-Field Models
+
+Project page: https://giampaolofolena.github.io/fluctuations.html — Non-Gaussian fluctuations near the glass transition, rare trajectories, and single-particle correlations via replica calculations and simulations.
+
+- [Equilibrium fluctuations in mean-field disordered models](https://link.aps.org/doi/10.1103/PhysRevE.106.024605) — PDF: https://giampaolofolena.github.io/papers/6_PhysRevE_2022.pdf
+- [Local Dynamical Heterogeneity in Simple Glass Formers](https://link.aps.org/doi/10.1103/PhysRevLett.128.175501) — PDF: https://giampaolofolena.github.io/papers/4_PhysRevLetter_2022.pdf
+- [Rare trajectories in heterogeneous mean-field fluctuations](https://journals.aps.org/pre/abstract/10.1103/f4dj-d2sh) — PDF: https://giampaolofolena.github.io/papers/11_PhysRevE_2026.pdf
+
+## Cage Geometry and Compression of Hard Spheres
+
+Project page: https://giampaolofolena.github.io/cage-geometry.html — Minimal infinite-dimensional model of random cages and jamming, and the universality of jamming algorithms across dimensions.
+
+- [Glasslike caging with random planes](https://link.aps.org/doi/10.1103/PhysRevE.109.024125) — PDF: https://giampaolofolena.github.io/papers/9_PhysRevE_2024.pdf
+- [The geometry of jamming algorithms in the random Lorentz gas](https://www.pnas.org/doi/10.1073/pnas.2422096122) — PDF: https://giampaolofolena.github.io/papers/10_PNAS_2025.pdf
+
+## Low-Temperature Two-Level Systems
+
+Project page: https://giampaolofolena.github.io/two-level.html — Soft anharmonic mean-field spin glasses and the origin of low-temperature anomalies in glasses.
+
+- [Marginal stability of soft anharmonic mean field spin glasses](https://dx.doi.org/10.1088/1742-5468/ac6253) — PDF: https://giampaolofolena.github.io/papers/5_J._Stat._Mech._2022.pdf
+
+## Algorithmic Chemistry
+
+Project page: https://giampaolofolena.github.io/algorithmic-chemistry.html — Algorithmic artificial chemistry where enzymes are cyclic functions; autocatalytic networks, complexity growth, self-replication, and selection.
+
+- [On the Emergence of Enzymes in an Artificial Chemistry](https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00791) — PDF: https://giampaolofolena.github.io/papers/isal_a_00791.pdf
+
+## Profiles
+
+- [Google Scholar](https://scholar.google.com/citations?user=Kb3X1E0AAAAJ&hl=en): Publications and citations.
+- [arXiv](https://arxiv.org/search/?searchtype=author&query=Folena%2C+G): Preprints.
+- [ResearchGate](https://www.researchgate.net/profile/Giampaolo-Folena-3): Profile and articles.
+
+## Academic Career
+
+- 2025–present: Thermodynamics of the origin of life — IFISC, Universitat de les Illes Balears
+- 2024–2025: Hard-sphere compression and instantons in complex landscapes — Sapienza Università di Roma
+- 2023–2024: Closure and open-endedness in evolution — Université Paul Sabatier
+- 2022–2023: Caging and jamming in simple glasses (with Patrick Charbonneau) — Duke University
+- 2020–2022: Fluctuations in mean-field models (with Francesco Zamponi) — École Normale Supérieure de Paris
+- 2016–2020: Out-of-equilibrium dynamics in mean-field models; PhD supervised by Silvio Franz and Federico Ricci-Tersenghi — Sapienza Università di Roma / LPTMS, Université Paris-Saclay
+
+## Other
+
+- [Network of Precarious Researchers (NPR NePeRo)](https://www.npr-nepero.org/nepero/): Organization connecting researchers and addressing precarity in academic work.
